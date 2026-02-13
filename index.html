@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>San Valentín 💘</title>
+<style>
+body{
+font-family:Arial;
+text-align:center;
+background:#ffe6eb;
+margin:0;
+padding:40px;
+}
+img{
+max-width:80%;
+border-radius:20px;
+margin-bottom:20px;
+}
+button{
+font-size:20px;
+padding:10px 25px;
+margin:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+.si{
+background:#ff4d6d;
+color:white;
+}
+.no{
+background:#999;
+color:white;
+position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<img src="foto.jpg">
+
+<h1>¿Quieres ser mi San Valentín? 💖</h1>
+
+<button class="si" onclick="aceptar()">Sí 💕</button>
+<button class="no" id="noBtn">No 😅</button>
+
+<script>
+function aceptar(){
+document.body.innerHTML="<h1 style='margin-top:200px;color:#d6336c;'>💘 Te amo mi niña 💘</h1>";
+}
+
+const noBtn=document.getElementById("noBtn");
+noBtn.addEventListener("mouseover",()=>{
+noBtn.style.left=Math.random()*window.innerWidth+"px";
+noBtn.style.top=Math.random()*window.innerHeight+"px";
+});
+</script>
+
+</body>
+</html>
